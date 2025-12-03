@@ -305,7 +305,7 @@ Moda: 20.125 %
 - Matrícula: 10427235
 - Turma: 01J
 - Instituição: [Universidade Presbiteriana Mackenzie]
-- Curso: Ciência da Computação / Engenharia de Software
+- Curso: Sistemas de Informação
 
 ### 📫 Contato
 - LinkedIn: [linkedin.com/in/kauan-sarzi](https://linkedin.com/in/kauan-sarzi)
