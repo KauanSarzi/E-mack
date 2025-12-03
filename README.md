@@ -119,8 +119,6 @@ Moda: 52.1 %
 emack-analysis/
 ├── gerar_relatorio_html.py      # Script principal
 ├── emack.csv                     # Dataset de produtos (800+ registros)
-├── relatorio_top_10_best_sellers.html    # Relatório gerado
-├── relatorio_produtos_*.html     # Relatórios por categoria
 └── README.md                     # Documentação
 ```
 
@@ -157,8 +155,8 @@ gerarHtml_ProdutosPorCategoria()  # Relatório por categoria
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/emack-analysis.git
-cd emack-analysis
+git clone https://github.com/seu-usuario/E-mack.git
+cd E-mack
 ```
 
 2. **Verifique os arquivos**
@@ -330,40 +328,3 @@ Este projeto foi desenvolvido para fins acadêmicos. Sinta-se livre para utiliza
 
 
 </div>
-
----
-
-## 📚 Documentação Adicional
-
-### Formato do Dataset (emack.csv)
-
-| Coluna | Tipo | Descrição |
-|--------|------|-----------|
-| `id` | String | Identificador único do produto |
-| `title` | String | Nome do produto |
-| `price` | Float | Preço atual |
-| `listPrice` | Float | Preço de lista (referência) |
-| `categoryName` | String | Categoria do produto |
-| `isBestSeller` | Boolean | Indicador de best-seller |
-| `boughtInLastMonth` | Integer | Quantidade vendida no último mês |
-
-### Exemplos de Comandos Python Utilizados
-
-```python
-# Leitura de CSV
-with open('emack.csv', 'r') as file:
-    linhas = file.readlines()
-
-# Ordenação com key function
-produtos_ordenados = sorted(dados, key=lambda x: float(x['price']))
-
-# List comprehension para cálculos
-proporcao = [cont[i] / total[i] * 100 for i in range(len(total))]
-
-# Fatiamento de lista
-top_10 = produtos_ordenados[-10:]  # 10 mais caros
-```
-
----
-
-**Última atualização**: Dezembro 2024
