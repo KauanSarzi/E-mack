@@ -1,80 +1,85 @@
-# 📊 E-Mack — E-commerce Data Analyzer
-
+# E-Mack — E-commerce Data Analysis System
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
 ![Analysis](https://img.shields.io/badge/Analysis-E--commerce-green?style=flat)
 ![Reports](https://img.shields.io/badge/Reports-HTML-orange?style=flat)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
 
-> Python application that processes CSV data from e-commerce operations and generates automated, readable HTML reports.
+## 📌 Overview
+
+E-Mack is a data analysis system developed using pure Python to process e-commerce product data stored in a CSV file.
+
+The project manually implements all logic for reading, processing, analyzing, and generating reports — without using external libraries such as pandas or data visualization frameworks.
 
 ---
 
-## 📋 Table of Contents
+## 🧠 Problem Context
 
-- [Description](#-description)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [How to Run](#-how-to-run)
-- [What I Learned](#-what-i-learned)
-- [Author](#-author)
+E-commerce companies need to analyze product data to better understand:
 
----
+- Product distribution by category
+- Percentage of best-selling products
+- Most expensive and least expensive products
+- Sales activity within a given period
 
-## 📖 Description
-
-E-Mack reads structured CSV data exported from an e-commerce platform, performs data analysis, and automatically generates formatted HTML reports. The goal is to turn raw sales and product data into actionable insights without manual effort.
+This project simulates a real-world scenario by implementing the full analytical workflow using only core Python features.
 
 ---
 
-## ✨ Features
+## 🛠️ Technologies Used
 
-- 📂 Reads and processes structured CSV datasets
-- 🔎 Analyzes e-commerce metrics and patterns
-- 📄 Generates formatted HTML reports automatically
-- ⚙️ Fully automated pipeline from raw data to report
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| Python 3.8+ | Core language |
-| CSV module | Data reading and parsing |
-| HTML | Report output format |
+- Python (standard library only)
+- Manual CSV file parsing
+- Data structures (lists and dictionaries)
+- Dynamic HTML generation
+- Embedded CSS styling
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Features
 
-```bash
-# Run the report generator
-python gerar_relatorio_html.py
-```
-
-The HTML report will be generated in the project directory and can be opened in any browser.
-
----
-
-## 📚 What I Learned
-
-- Data processing and manipulation using Python
-- Working with structured real-world datasets
-- Generating automated reports programmatically
-- Applying programming logic to business data problems
+✔ Manual CSV file reading and parsing  
+✔ Product count by category  
+✔ Percentage calculation per category  
+✔ Best-seller proportion analysis  
+✔ Top 10 most expensive products  
+✔ Top 10 least expensive products  
+✔ Automatic HTML report generation  
+✔ Interactive terminal menu  
 
 ---
 
-## 👤 Author
+## 🏗️ Project Architecture
 
-**Kauan Sarzi da Rocha**
+The system is organized into functions responsible for:
 
-| | |
-|---|---|
-| 🎓 Institution | Universidade Presbiteriana Mackenzie |
-| 📚 Course | Sistemas de Informação |
-| 🪪 Registration | 10427235 |
+- Data loading
+- Data aggregation and processing
+- Custom sorting operations
+- HTML report generation
+- Terminal-based user interaction
 
-[![GitHub](https://img.shields.io/badge/GitHub-KauanSarzi-181717?style=flat&logo=github)](https://github.com/KauanSarzi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kauan%20Sarzi-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/kauan-sarzi)
-[![Email](https://img.shields.io/badge/Email-kauansarzi24@gmail.com-D14836?style=flat&logo=gmail)](mailto:kauansarzi24@gmail.com)
+All analytical logic was implemented manually to demonstrate strong understanding of data manipulation fundamentals.
+
+---
+
+## 🚀 How to Run
+
+1. Place the `emack.csv` file in the same directory as the project.
+2. Run:
+
+   python main.py
+
+3. Select the desired option from the menu.
+
+The system will automatically generate HTML reports based on the selected analysis.
+
+---
+
+## 📈 Technical Learnings
+
+- Manual CSV file handling
+- Python data structures manipulation
+- Implementing analytical logic without external libraries
+- Custom sorting using `sorted()`
+- Dynamic HTML page generation
+- Structured functional programming approach
