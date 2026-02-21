@@ -67,7 +67,7 @@ All analytical logic was implemented manually to demonstrate strong understandin
 1. Place the `emack.csv` file in the same directory as the project.
 2. Run:
 
-   python main.py
+   python gerar_relatorio_HTML.py
 
 3. Select the desired option from the menu.
 
